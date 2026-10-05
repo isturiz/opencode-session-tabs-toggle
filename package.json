@@ -1,0 +1,33 @@
+{
+  "name": "opencode-session-tabs-toggle",
+  "version": "0.1.0",
+  "description": "Toggle OpenCode V2 session tabs with a keyboard shortcut.",
+  "license": "MIT",
+  "keywords": ["opencode", "opencode-plugin", "tui", "session-tabs", "keybind"],
+  "packageManager": "pnpm@12.4.1",
+  "type": "module",
+  "exports": {
+    "./tui": "./src/tui.ts"
+  },
+  "files": ["src", "tui.ts", "README.md", "LICENSE"],
+  "scripts": {
+    "test": "bun test",
+    "typecheck": "tsc --noEmit",
+    "prepack": "pnpm test && pnpm typecheck"
+  },
+  "dependencies": {
+    "jsonc-parser": "3.3.1"
+  },
+  "peerDependencies": {
+    "@opencode/plugin": ">=2.0.23 <3"
+  },
+  "peerDependenciesMeta": {
+    "@opencode/plugin": { "optional": true }
+  },
+  "devDependencies": {
+    "@opencode/plugin": "2.0.23",
+    "@types/bun": "1.4.2",
+    "@types/node": "24.19.1",
+    "typescript": "5.9.3"
+  }
+}

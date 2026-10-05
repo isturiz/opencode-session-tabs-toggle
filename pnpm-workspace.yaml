@@ -1,0 +1,10 @@
+saveExact: true
+allowBuilds:
+  msgpackr-extract: false
+minimumReleaseAgeExclude:
+  - '@opencode/ai@2.0.23'
+  - '@opencode/client@2.0.23'
+  - '@opencode/plugin@2.0.23'
+  - '@opencode/protocol@2.0.23'
+  - '@opencode/schema@2.0.23'
+  - '@opencode/util@2.0.23'
